@@ -21,7 +21,7 @@ body{
        Top header 
 -------------------- */
 .top-header{
-    height: 90vh;
+    height: 95vh;
     background-color: #2D25A0;
 }
 .top-header .container{
@@ -29,7 +29,7 @@ body{
     grid-template-columns: repeat(2,1fr);
 }
 .top-header-text{
-    margin-top: 200px; 
+    margin-top: 180px; 
     color:#fff
 } 
 .top-header-text h1{
@@ -68,19 +68,22 @@ button:hover .fa-arrow-right{
 /* --------------------------
           main section
 ------------------------------ */
+.main-players-section{
+    padding:40px 0; 
+}
 .all-players{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-gap:30px;
-}
-.main-players-section{
-     padding:40px 0; 
-}
+} 
 .single-player{
     margin-top: 30px;
     box-shadow: 0 3px 25px #ddd;
     padding:15px;
     border-radius:5px;
+}
+.single-player img{
+    width: 100%;
 }
 .single-player h2{
     font-size: 28px;
@@ -94,9 +97,7 @@ button:hover .fa-arrow-right{
     margin-top: 16px;
     color:#6C6C6C;
 }
-.single-player img{
-    width: 100%;
-}
+
 /* ------------------------
     coach section
 --------------------------- */
