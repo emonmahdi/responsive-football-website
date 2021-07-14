@@ -98,11 +98,106 @@ button:hover .fa-arrow-right{
     width: 100%;
 }
 /* ------------------------
+    coach section
+--------------------------- */
+.coach-section{
+    padding:50px 0;
+    background: url(../images/bg/chefs.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.coaches{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap:15px;
+    border-radius: 5px;
+   
+}
+.section-title{
+    text-align: center;
+    margin-bottom: 60px;
+}
+.section-title h2{
+    margin-bottom: 10px;
+    font-size: 35px;
+}
+.single-coach{
+    box-shadow: 0 5px 18px #ddd;
+    background:#fff;
+    padding: 15px;
+    text-align: center;
+    border-left:5px solid;
+    border-image: linear-gradient(#E02C6D,#2D25A0);
+    border-image-slice: 30;
+}
+.single-coach img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border:5px solid #E02C6D;
+    display: inline-block;
+    padding: 5px;
+    margin-bottom: 20px;
+    
+
+}
+.single-coach h3{
+    margin-bottom: 10px;
+}
+.single-coach span{
+    font-style: italic;
+}
+/* ------------------------
+   blog-section
+--------------------------- */
+.blog-section{
+    padding:60px 0;
+    background: url(../images/bg/frame59.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.blogs{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap:20px;
+}
+.single-blog{
+    display: flex;
+    background:#fff;
+    flex-direction: row;
+    box-shadow: 0 5px 20px #ddd;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    
+}
+.blog-img img{
+    width: 100%;
+    height: 100%;
+}
+.blog-content{
+    margin-left: 18px;
+    padding: 15px;
+}
+.blog-content h3{
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+.blog-content p{
+    color:#4a4d55;
+    line-height: 26px;
+}
+
+
+
+/* ------------------------
     footer-items
 --------------------------- */
 .footer-items{
     text-align: center;
     padding:40px 0;
+}
+.footer-items img{
+    width: 40%; 
 }
 .social-icon{
     margin:20px 0;
