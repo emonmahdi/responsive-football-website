@@ -21,7 +21,7 @@ body{
        Top header 
 -------------------- */
 .top-header{
-    height: 95vh;
+    height: 90vh;
     background-color: #2D25A0;
 }
 .top-header .container{
@@ -137,9 +137,7 @@ button:hover .fa-arrow-right{
     border:5px solid #E02C6D;
     display: inline-block;
     padding: 5px;
-    margin-bottom: 20px;
-    
-
+    margin-bottom: 20px; 
 }
 .single-coach h3{
     margin-bottom: 10px;
@@ -161,22 +159,28 @@ button:hover .fa-arrow-right{
     grid-template-columns: repeat(2,1fr);
     grid-gap:20px;
 }
-.single-blog{
-    display: flex;
-    background:#fff;
-    flex-direction: row;
+.single-blog{ 
+    background:#fff; 
     box-shadow: 0 5px 20px #ddd;
     margin-bottom: 20px;
     border-radius: 10px;
-    
+    overflow: hidden;
 }
 .blog-img img{
-    width: 100%;
-    height: 100%;
+    width: 90%;
+    height: 300px;
+    display: inline-block;
+    padding: 20px;
+    border-radius:30px;
 }
 .blog-content{
-    margin-left: 18px;
+    margin-left: 10px;
     padding: 15px;
+}
+.blog-content span{
+    margin-bottom: 10px;
+    display: block;
+    color:#6C6C6C
 }
 .blog-content h3{
     margin-bottom: 15px;
@@ -220,4 +224,76 @@ button:hover .fa-arrow-right{
 }
 .footer-items p{
     color:#6C6C6C;
+}
+
+
+
+/* ------------------------
+          Media Query
+--------------------------- */
+@media only screen and (max-width:592px) {
+    .top-header{
+      height: auto;  
+    }
+    .top-header .container{ 
+        grid-template-columns: repeat(1,1fr);
+    }
+    .top-header-text{
+        margin-top: 40px;  
+    } 
+    .top-header-image img{ 
+        margin-top: 50px;
+    }
+    .top-header-text h1{
+        font-size: 34px; 
+        line-height:40px;
+    }
+    /* player section */
+    .all-players{ 
+        grid-template-columns: repeat(1,1fr); 
+    }
+    /* Coach section */
+    .coaches{ 
+        grid-template-columns: repeat(1,1fr); 
+       
+    }
+    .single-coach img{
+        width: 140px;
+        height: 140px; 
+    }
+    .single-coach{
+        margin-bottom: 30px;
+    }
+    /* Blog-section */
+    .blogs{ 
+        grid-template-columns: repeat(1,1fr); 
+    }
+    .blog-img img{
+        width: 80%;
+        height: 270px;
+        display: inline-block;
+        padding: 20px;
+        border-radius:30px;
+    }
+}
+@media only screen and (min-width:592px) and (max-width:992px){
+    .top-header {
+        overflow: hidden;
+        height: auto;
+    }
+    .top-header .container{ 
+        grid-template-columns: repeat(1,1fr);
+    }
+    .top-header-text h1{
+        font-size: 45px; 
+        line-height:45px;
+    }
+    .top-header-text{
+        margin-top: 40px;  
+    }  
+    /* players */
+    .all-players,.coaches{ 
+        grid-template-columns: repeat(2,1fr); 
+        
+    }
 }
